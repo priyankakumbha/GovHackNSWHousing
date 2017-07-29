@@ -6096,8 +6096,9 @@ function drawChart() {
   ]);
 
   var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
-  chart.draw(data, {
-    width: 900,
-    height: 500
-  });
+   var options = {};
+	     options['state'] ='{"xAxisOption":"2","orderedByX":false,"yLambda":1,"sizeOption":"2","nonSelectedAlpha":0.4,"xZoomedDataMax":760,"xZoomedIn":false,"time":"1990-03-01","yZoomedDataMax":760,"iconType":"BUBBLE","yZoomedIn":false,"iconKeySettings":[],"xLambda":1,"showTrails":false,"yAxisOption":"2","xZoomedDataMin":110,"yZoomedDataMin":110,"duration":{"timeUnit":"D","multiplier":1},"uniColorForNonSelected":false,"colorOption":"_UNIQUE_COLOR","dimensions":{"iconDimensions":["dim0"]},"playDuration":15000,"orderedByY":false}'
+		   options['width'] = 900;
+		   options['height'] = 500;
+		   chart.draw(data, options);
 }
