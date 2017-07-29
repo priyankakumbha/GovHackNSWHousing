@@ -4,9 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript" src="js/rent.js"></script>
+ <script >
+   google.charts.load('current', {packages:["motionchart"]});
+   google.charts.setOnLoadCallback(drawChart);
+</script>
+ <link rel="stylesheet" href="style.css"/>
   <title>Document</title>
 </head>
 <body>
-  welcome to govhack!
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="images/perfectlogo.png"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-stats"></span> Sales</a></li>
+      <li><a href="#"><i class="fa fa-dollar"style="font-size:15px;color:red"></i></span> Rent</a></li>
+
+    </ul>
+  </div>
+</nav>
+<div id="content" role="main">
+    <!-- <div class="jumbotron"> -->
+        <div class="container">
+
+
+            <h2>About</h1>
+
+    </div>
+
+    <div class="container">
+        <p>HomeChoice NSW website visualises sales and rent pay data based on NSW suburbs renting and house price trends data released by NSW houshing.</p>
+        <ul>
+        <li>All statistics were sourced from Rent and sales Report- Issue 119. </li>
+        <li>This will facilitate Sydney -siders to quickly view the renting and selling data within
+          different suburb and time period</li>
+        <li>All data was aggregated on state and occupation group level.</li>
+        <li>Our aim is to make the data more friendly and interesting with beautiful experience.</li>
+        </ul>
+
+  <h1>Rent Trend in NSW</h1>
+<div id="chart_div" style="width: 900px; height: 500px; margin-top: 100px;"></div>
+</div>
+
+
+<!-- <h1 id="datasources">Data sources</h1>
+<ul>
+    <li>
+      Rent and Sales Report - Issue 119
+        <dl class="dl-horizontal">
+            <dt>Publisher/Agency</dt>
+            <dd>Family and community service NSW</dd>
+
+            <dt>Link</dt>
+            <dd><a rel="nofollow" href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119">data source</a>
+            </dd>
+        </dl>
+    </li>
+</ul>
+ -->
+
+</div>
+
+
+<div class="panel-footer footer text-left text-muted">
+Data source:<a rel="nofollow" href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119">Family and community service NSW</a>
+        <!-- <div class="pull-right"> <a href="/about#datasources">Developed by Bhuvana & Priyanka</a></div> -->
+    </div>
+
+
 </body>
 </html>
